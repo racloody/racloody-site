@@ -1,0 +1,33 @@
+@import url(https://fonts.google.com/specimen/Concert+One?query=Concert);
+* {
+font-family: 'Arial';
+}
+/* top page */
+
+body {margin: 0 auto;}
+header.header img{
+    padding: 20px 65px;
+    width: 90px
+}
+/* landing-page */
+.big-title {
+    color: white;
+    font-size: 70px;
+    font-family: 'Concert', 'Arial';
+    padding: 80px 75px;
+    margin-right: 650px;
+    }
+section.top-page {
+    background: url('../images/banner.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+/* v-ingre */
+.v-ingre {
+    display: flex;
+    
+}
+.icon {
+    size: 10vh;
+}
