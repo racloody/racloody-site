@@ -159,3 +159,8 @@ body {
   padding-top: 10vh;
   margin: auto;
 }
+p {
+    font-family: 'Comfortaa', 'Arial';
+    font-size: 1rem;
+    padding: 1vh 0 1vh 0;
+}
