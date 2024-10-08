@@ -14,7 +14,7 @@
     padding: 0 2vh 0 2vh;
   }
   .footer {
-    font-size: 0.2%;
+    font-size: 0.8rem;
   }
 }
 body {
@@ -203,9 +203,12 @@ p {
 .spotify {
   height: 100vh;
   max-width: 600px;
-  padding-top: 10vh;
+
   padding-bottom: 10vh;
-  margin: auto;
+  @media screen and (max-width: 700px) {
+    margin: auto;
+  }
+  
 }
 .footer {
   display: flex;
@@ -215,11 +218,28 @@ p {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: #0e0d12;
-  font-size: 1.2rem;
+  background-color: #0e0d12;}
+
+.footer p {
+  font-size: 1rem;
+
+  @media screen and (max-width: 700px) {
+    
+    font-size: 0.8rem;
+    justify-content: center ;
+  }
+ 
 }
 
 .about {
+  @media screen and (max-width: 700px) {
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
   display: grid;
   align-items: center;
   grid-template-columns: 1fr  1fr;
@@ -229,6 +249,10 @@ p {
 }
 
 img {
+  @media screen and (max-width: 700px) {
+    width: 70%;
+    height: 70%;
+    }
   width: 80%;
   height: 80%;
 }
