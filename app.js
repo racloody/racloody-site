@@ -7,6 +7,7 @@ const openPopup = (e) => {
   let clickedImageName = gridItemClicked.id;
   popupBg.classList.add("active");
   popupImg.src = `./images/${clickedImageName}.jpg`;
+  popupImg.textContent = `${clickedImageName}`;
 };
 
 const closePopup = () => {

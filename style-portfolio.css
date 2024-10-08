@@ -20,6 +20,7 @@ p {
   overflow-y: scroll;
   padding-right: 10px;
   grid-auto-flow: dense;
+  padding-bottom: 70px;
 }
 
 #grid::-webkit-scrollbar {
@@ -36,12 +37,19 @@ p {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
 
+}
 
 #nature-1,
 #nature-3 {
   grid-row: span 1;
-  grid column: span 1;
+  grid-column: span 1;
 }
 
 #nature-2,
