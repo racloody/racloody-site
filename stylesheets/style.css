@@ -24,6 +24,7 @@ body {
 }
 
 
+
 .container {
   max-width: 1050px;
   width: 90%;
@@ -65,9 +66,9 @@ body {
   color: #ff3131;
 }
 
-.navbar .nav-container a:hover{
-    font-weight: bolder;
-}
+/* .navbar .nav-container a:hover{
+    text-shadow: #d32020;
+} */
 
 .nav-container {
   display: block;
@@ -153,11 +154,59 @@ body {
 }
 a {
   text-decoration: none;
-  color: #ff3131
+  color: #f13232
 }
+
 a:hover {
-  font-weight: bolder;
-  color:#d32020 ;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  mask-size: 200%; 
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  from {
+    mask-position: 150%;
+  }
+  
+  to {
+    mask-position: -50%;
+  }
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+ .navbar .nav-container a:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+
+
+.navbar .nav-container .logo a:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 h2 {
   font-size: 2rem;
